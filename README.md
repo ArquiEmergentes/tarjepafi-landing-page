@@ -41,4 +41,4 @@ Deployed with GitHub Pages from the `main` branch, root folder (`Settings > Page
 ## Notes
 
 - The contact form has no backend yet. Submissions are simulated in `js/main.js` (`initForms`).
-- Illustrations are placeholders. To use the photos from the Figma mock-up, export them to `assets/images/` and update the `src` attributes in `index.html`.
+- The photos in `assets/images/*.png` are exported from the Figma mock-up without their badges. The badges are HTML (`.media-badge`), so they follow the language switch.

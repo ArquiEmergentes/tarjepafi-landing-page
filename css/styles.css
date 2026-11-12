@@ -318,30 +318,59 @@ button { cursor: pointer; }
 .menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ---------- Media cards (illustrations + badge) ---------- */
-.media-card {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  background: var(--brand-light);
+/* ---------- Photos (Figma exports: corners, shadow and badge are baked in) ---------- */
+.media-photo { position: relative; }
+.media-photo img {
+  width: 100%;
+  height: auto;
 }
-.media-card img { width: 100%; height: auto; }
+
+/* The hero and ecosystem exports include transparent padding for their
+   drop shadow. The figure box matches the photo area only; the image is
+   enlarged and offset so the shadow spills outside it. Values come from
+   each export's opaque area (margins in % refer to the figure width). */
+.media-hero img {               /* 640x480, photo 560x400 at (40,22) */
+  width: calc(100% * 640 / 560);
+  max-width: none;
+  margin: calc(-100% * 22 / 560) 0 calc(-100% * 58 / 560) calc(-100% * 40 / 560);
+}
+.media-eco img {                /* 584x364, photo 520x300 at (32,16) */
+  width: calc(100% * 584 / 520);
+  max-width: none;
+  margin: calc(-100% * 16 / 520) 0 calc(-100% * 48 / 520) calc(-100% * 32 / 520);
+}
+
+/* Segment photos: same frame size even though the exports differ in width */
+.media-segment {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.media-segment img {
+  aspect-ratio: 580 / 180;
+  object-fit: cover;
+}
+
 .media-badge {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  max-width: calc(100% - 32px);
   padding: 6px 14px;
   border-radius: 999px;
   background: var(--white);
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
   font-size: 0.75rem;
   font-weight: 600;
+  line-height: 1.4;
   color: var(--text);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.media-hero .media-badge { left: 42%; top: 52%; }
+
+/* Let the photo shadows reach the screen edge without causing side scroll */
+main > section { overflow-x: clip; }
 
 /* ---------- Hero ---------- */
 .hero { padding: var(--s-9) 0; }
@@ -451,11 +480,8 @@ button { cursor: pointer; }
   gap: var(--s-5);
 }
 .segment-card { padding: var(--s-4) var(--s-4) var(--s-5); }
-.segment-card .media-segment {
-  box-shadow: none;
-  border-radius: 12px;
-  margin-bottom: var(--s-4);
-}
+.segment-card .media-segment { margin-bottom: var(--s-4); }
+.segment-card .card-title { margin-top: var(--s-1); }
 .segment-card .card-title,
 .segment-card .card-text { padding: 0 var(--s-2); }
 
@@ -806,7 +832,6 @@ body.modal-open { overflow: hidden; }
   .header-actions { gap: var(--s-2); }
 
   .btn-row .btn { flex: 1 1 0; padding: 0 var(--s-3); }
-
   .feature-card { padding: var(--s-4); }
 
   .steps {

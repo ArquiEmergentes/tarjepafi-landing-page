@@ -318,7 +318,7 @@
 
   function initReveal() {
     const items = document.querySelectorAll(
-      ".section-header, .feature-card, .step, .segment-card, .faq-item, .split-text, .media-card, .form-panel"
+      ".section-header, .feature-card, .step, .segment-card, .faq-item, .split-text, .media-photo, .form-panel"
     );
     if (!("IntersectionObserver" in window)) return;
 
