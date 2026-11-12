@@ -26,10 +26,12 @@ const TRANSLATIONS = {
 
     "hero.title": "Attendance, access and occupancy in a single credential",
     "hero.text": "Manage presence control, facility security and real-time monitoring of university spaces through NFC credentials and integrated IoT devices.",
+    "hero.badge": "NFC credential + IoT",
     "hero.alt": "A student taps an NFC credential on an IoT reader at a campus entrance",
 
     "eco.title": "One ecosystem for your campus",
     "eco.text": "Connect academic control, physical infrastructure and campus services in a unified digital environment, ensuring security, traceability and seamless integration.",
+    "eco.badge": "Connected campus",
     "eco.alt": "Students using their NFC credentials at the campus entrances",
 
     "features.title": "Main features",
@@ -58,9 +60,11 @@ const TRANSLATIONS = {
     "segments.title": "Who is TarjePAFI for?",
     "segments.admin.title": "Administrators and university management",
     "segments.admin.text": "Supervise security, optimize the use of spaces and get consolidated campus reports.",
+    "segments.admin.badge": "University management",
     "segments.admin.alt": "University administrators reviewing attendance and occupancy dashboards",
     "segments.student.title": "Students",
     "segments.student.text": "Access authorized venues and check in to class quickly, simply and reliably.",
+    "segments.student.badge": "Student experience",
     "segments.student.alt": "Student tapping an NFC credential on a reader to enter a campus building",
 
     "faq.title": "Frequently asked questions",
@@ -129,10 +133,12 @@ const TRANSLATIONS = {
 
     "hero.title": "Asistencia, accesos y aforo en una sola credencial",
     "hero.text": "Gestione el control de presencia, la seguridad de recintos y el monitoreo de espacios universitarios en tiempo real mediante credenciales NFC y dispositivos IoT integrados.",
+    "hero.badge": "Credencial NFC + IoT",
     "hero.alt": "Un estudiante acerca su credencial NFC a un lector IoT en el ingreso del campus",
 
     "eco.title": "Un solo ecosistema para tu campus",
     "eco.text": "Conecte el control académico, la infraestructura física y los servicios del campus en un entorno digital unificado, garantizando seguridad, trazabilidad e integración fluida.",
+    "eco.badge": "Campus conectado",
     "eco.alt": "Estudiantes usando sus credenciales NFC en los ingresos del campus",
 
     "features.title": "Funcionalidades principales",
@@ -161,9 +167,11 @@ const TRANSLATIONS = {
     "segments.title": "¿Para quién es TarjePAFI?",
     "segments.admin.title": "Administradores y gestión universitaria",
     "segments.admin.text": "Supervise la seguridad, optimice el uso de espacios y obtenga reportes consolidados del campus.",
+    "segments.admin.badge": "Gestión universitaria",
     "segments.admin.alt": "Administradores universitarios revisando dashboards de asistencia y aforo",
     "segments.student.title": "Estudiantes",
     "segments.student.text": "Acceda a recintos autorizados y registre asistencia de forma rápida, simple y confiable.",
+    "segments.student.badge": "Experiencia estudiantil",
     "segments.student.alt": "Estudiante acercando su credencial NFC a un lector para ingresar a un edificio del campus",
 
     "faq.title": "Preguntas frecuentes",
