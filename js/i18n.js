@@ -26,13 +26,11 @@ const TRANSLATIONS = {
 
     "hero.title": "Attendance, access and occupancy in a single credential",
     "hero.text": "Manage presence control, facility security and real-time monitoring of university spaces through NFC credentials and integrated IoT devices.",
-    "hero.badge": "NFC credential + IoT",
     "hero.alt": "A student taps an NFC credential on an IoT reader at a campus entrance",
 
     "eco.title": "One ecosystem for your campus",
     "eco.text": "Connect academic control, physical infrastructure and campus services in a unified digital environment, ensuring security, traceability and seamless integration.",
-    "eco.badge": "Connected campus",
-    "eco.alt": "Campus buildings connected to a central platform",
+    "eco.alt": "Students using their NFC credentials at the campus entrances",
 
     "features.title": "Main features",
     "features.subtitle": "Comprehensive tools designed to optimize management and the campus experience.",
@@ -58,14 +56,12 @@ const TRANSLATIONS = {
     "how.s3.text": "Information syncs automatically to update records and analytics reports.",
 
     "segments.title": "Who is TarjePAFI for?",
-    "segments.admin.badge": "University management",
     "segments.admin.title": "Administrators and university management",
     "segments.admin.text": "Supervise security, optimize the use of spaces and get consolidated campus reports.",
-    "segments.admin.alt": "Analytics dashboard with attendance and occupancy charts",
-    "segments.student.badge": "Student experience",
+    "segments.admin.alt": "University administrators reviewing attendance and occupancy dashboards",
     "segments.student.title": "Students",
     "segments.student.text": "Access authorized venues and check in to class quickly, simply and reliably.",
-    "segments.student.alt": "Student using an NFC credential to enter a classroom",
+    "segments.student.alt": "Student tapping an NFC credential on a reader to enter a campus building",
 
     "faq.title": "Frequently asked questions",
     "faq.subtitle": "Answers to the most common questions about how TarjePAFI works and what it costs.",
@@ -133,13 +129,11 @@ const TRANSLATIONS = {
 
     "hero.title": "Asistencia, accesos y aforo en una sola credencial",
     "hero.text": "Gestione el control de presencia, la seguridad de recintos y el monitoreo de espacios universitarios en tiempo real mediante credenciales NFC y dispositivos IoT integrados.",
-    "hero.badge": "Credencial NFC + IoT",
     "hero.alt": "Un estudiante acerca su credencial NFC a un lector IoT en el ingreso del campus",
 
     "eco.title": "Un solo ecosistema para tu campus",
     "eco.text": "Conecte el control académico, la infraestructura física y los servicios del campus en un entorno digital unificado, garantizando seguridad, trazabilidad e integración fluida.",
-    "eco.badge": "Campus conectado",
-    "eco.alt": "Edificios del campus conectados a una plataforma central",
+    "eco.alt": "Estudiantes usando sus credenciales NFC en los ingresos del campus",
 
     "features.title": "Funcionalidades principales",
     "features.subtitle": "Herramientas integrales diseñadas para optimizar la gestión y experiencia en el campus.",
@@ -165,14 +159,12 @@ const TRANSLATIONS = {
     "how.s3.text": "La información se sincroniza automáticamente para actualizar registros y reportes analíticos.",
 
     "segments.title": "¿Para quién es TarjePAFI?",
-    "segments.admin.badge": "Gestión universitaria",
     "segments.admin.title": "Administradores y gestión universitaria",
     "segments.admin.text": "Supervise la seguridad, optimice el uso de espacios y obtenga reportes consolidados del campus.",
-    "segments.admin.alt": "Dashboard analítico con gráficos de asistencia y aforo",
-    "segments.student.badge": "Experiencia estudiantil",
+    "segments.admin.alt": "Administradores universitarios revisando dashboards de asistencia y aforo",
     "segments.student.title": "Estudiantes",
     "segments.student.text": "Acceda a recintos autorizados y registre asistencia de forma rápida, simple y confiable.",
-    "segments.student.alt": "Estudiante usando su credencial NFC para ingresar a un aula",
+    "segments.student.alt": "Estudiante acercando su credencial NFC a un lector para ingresar a un edificio del campus",
 
     "faq.title": "Preguntas frecuentes",
     "faq.subtitle": "Respuestas a las dudas más comunes sobre el funcionamiento y los costos de TarjePAFI.",

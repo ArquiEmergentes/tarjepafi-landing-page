@@ -318,30 +318,14 @@ button { cursor: pointer; }
 .menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ---------- Media cards (illustrations + badge) ---------- */
-.media-card {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  background: var(--brand-light);
+/* ---------- Photos (Figma exports: corners, shadow and badge are baked in) ---------- */
+.media-photo img {
+  width: 100%;
+  height: auto;
 }
-.media-card img { width: 100%; height: auto; }
-.media-badge {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: var(--white);
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text);
-  white-space: nowrap;
-}
-.media-hero .media-badge { left: 42%; top: 52%; }
+/* The hero export includes ~40px of transparent padding for its shadow;
+   pull it outward so the photo edges line up with the grid. */
+.media-hero { margin: -6% -6.5% -10%; }
 
 /* ---------- Hero ---------- */
 .hero { padding: var(--s-9) 0; }
@@ -451,11 +435,7 @@ button { cursor: pointer; }
   gap: var(--s-5);
 }
 .segment-card { padding: var(--s-4) var(--s-4) var(--s-5); }
-.segment-card .media-segment {
-  box-shadow: none;
-  border-radius: 12px;
-  margin-bottom: var(--s-4);
-}
+.segment-card .media-segment { margin-bottom: var(--s-4); }
 .segment-card .card-title,
 .segment-card .card-text { padding: 0 var(--s-2); }
 
@@ -806,6 +786,9 @@ body.modal-open { overflow: hidden; }
   .header-actions { gap: var(--s-2); }
 
   .btn-row .btn { flex: 1 1 0; padding: 0 var(--s-3); }
+
+  /* Never pull the hero photo past the 16px page gutter */
+  .media-hero { margin-left: max(-6.5%, calc(-1 * var(--s-4))); margin-right: max(-6.5%, calc(-1 * var(--s-4))); }
 
   .feature-card { padding: var(--s-4); }
 
